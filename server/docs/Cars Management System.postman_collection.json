@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "5233ac2a-c9be-4a49-9fc0-4a38ecaa27cb",
+		"name": "Cars Management System",
+		"description": "It contains the API endpoints for the cars management system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30948103"
+	},
+	"item": [
+		{
+			"name": "v1/cars",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"brand\": \"Audi\",\n    \"model\": \"A4\",\n    \"year\": 2023,\n    \"price\": 10000000,\n    \"propellant\": \"petrol\",\n    \"additionalInfo\": \"fsadf afsfsdaf afdsafasdf fsadfa\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/v1/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"v1",
+						"cars"
+					]
+				},
+				"description": "Adds a new car"
+			},
+			"response": []
+		},
+		{
+			"name": "v1/cars/:carId",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"brand\": \"BMW\",\n    \"model\": \"i8\",\n    \"year\": 2023,\n    \"price\": 10000000,\n    \"propellant\": \"petrol\",\n    \"additionalInfo\": \"fsadf afsfsdaf afdsafasdf fsadfa\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/v1/cars/:carId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"v1",
+						"cars",
+						":carId"
+					],
+					"variable": [
+						{
+							"key": "carId",
+							"value": "car-010bebf7-839e-426f-8fe7-09957f68c86c"
+						}
+					]
+				},
+				"description": "Updates the data for a car, referenced by the unique identifier of the car"
+			},
+			"response": []
+		},
+		{
+			"name": "v1/cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/v1/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"v1",
+						"cars"
+					]
+				},
+				"description": "Fetches a list of available cars"
+			},
+			"response": []
+		},
+		{
+			"name": "v1/cars/:carId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/v1/cars/:carId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"v1",
+						"cars",
+						":carId"
+					],
+					"variable": [
+						{
+							"key": "carId",
+							"value": "car-a1621dc7-d17e-4ae4-b77f-7e2af9125032"
+						}
+					]
+				},
+				"description": "Deletes a car, referenced by the unique identifier of the car"
+			},
+			"response": []
+		}
+	]
+}

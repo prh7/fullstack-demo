@@ -1,0 +1,2238 @@
+2023-11-05T11:01:15.026Z [Car Management System Backend] [31merror[39m -> Error at /services/database/cars#addCar: Error: Car validation failed: year: Path `year` is required., additionalInfo: Path `additionalInfo` is required.
+    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:804:19)
+    at inspect (node:internal/util/inspect:363:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)
+    at Object.format (node:internal/util/inspect:2154:10)
+    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)
+    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)
+    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)
+    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)
+    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)
+    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Car validation failed: year: Path `year` is required., additionalInfo: Path `additionalInfo` is required.\n' +
+    '    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)\n' +
+    '    at formatValue (node:internal/util/inspect:804:19)\n' +
+    '    at inspect (node:internal/util/inspect:363:10)\n' +
+    '    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)\n' +
+    '    at Object.format (node:internal/util/inspect:2154:10)\n' +
+    '    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)\n' +
+    '    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)\n' +
+    '    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)\n' +
+    '    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)\n' +
+    '    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)\n' +
+    '    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)\n' +
+    '    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)\n' +
+    '    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)\n' +
+    '    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)\n' +
+    '    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)\n' +
+    '    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Car validation failed: year: Path `year` is required., additionalInfo: Path `additionalInfo` is required.',
+  errors: {
+    year: ValidatorError: Path `year` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaNumber.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `year` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaNumber.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `year` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `year` is required.',
+        type: 'required',
+        path: 'year',
+        value: null
+      },
+      kind: 'required',
+      path: 'year',
+      value: null,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    },
+    additionalInfo: ValidatorError: Path `additionalInfo` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `additionalInfo` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `additionalInfo` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `additionalInfo` is required.',
+        type: 'required',
+        path: 'additionalInfo',
+        value: null
+      },
+      kind: 'required',
+      path: 'additionalInfo',
+      value: null,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    }
+  },
+  _message: 'Car validation failed'
+}
+2023-11-05T11:01:15.029Z [Car Management System Backend] [31merror[39m -> Error at /controllers/cars#createCar: InternalServerError: Failure in adding the car!
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Failure in adding the car!\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Failure in adding the car!',
+  statusCode: 500,
+  data: {}
+}
+2023-11-05T11:12:04.397Z [Car Management System Backend] [31merror[39m -> Error at /services/database/cars#addCar: Error: Car validation failed: year: Path `year` is required., price: Path `price` is required., propellant: Path `propellant` is required., additionalInfo: Path `additionalInfo` is required.
+    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:804:19)
+    at inspect (node:internal/util/inspect:363:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)
+    at Object.format (node:internal/util/inspect:2154:10)
+    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)
+    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)
+    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)
+    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)
+    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)
+    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Car validation failed: year: Path `year` is required., price: Path `price` is required., propellant: Path `propellant` is required., additionalInfo: Path `additionalInfo` is required.\n' +
+    '    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)\n' +
+    '    at formatValue (node:internal/util/inspect:804:19)\n' +
+    '    at inspect (node:internal/util/inspect:363:10)\n' +
+    '    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)\n' +
+    '    at Object.format (node:internal/util/inspect:2154:10)\n' +
+    '    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)\n' +
+    '    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)\n' +
+    '    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)\n' +
+    '    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)\n' +
+    '    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)\n' +
+    '    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)\n' +
+    '    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)\n' +
+    '    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)\n' +
+    '    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)\n' +
+    '    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)\n' +
+    '    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Car validation failed: year: Path `year` is required., price: Path `price` is required., propellant: Path `propellant` is required., additionalInfo: Path `additionalInfo` is required.',
+  errors: {
+    year: ValidatorError: Path `year` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaNumber.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `year` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaNumber.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `year` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `year` is required.',
+        type: 'required',
+        path: 'year',
+        value: null
+      },
+      kind: 'required',
+      path: 'year',
+      value: null,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    },
+    price: ValidatorError: Path `price` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaNumber.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `price` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaNumber.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `price` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `price` is required.',
+        type: 'required',
+        path: 'price',
+        value: null
+      },
+      kind: 'required',
+      path: 'price',
+      value: null,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    },
+    propellant: ValidatorError: Path `propellant` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `propellant` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `propellant` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `propellant` is required.',
+        type: 'required',
+        path: 'propellant',
+        value: ''
+      },
+      kind: 'required',
+      path: 'propellant',
+      value: '',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    },
+    additionalInfo: ValidatorError: Path `additionalInfo` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `additionalInfo` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `additionalInfo` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `additionalInfo` is required.',
+        type: 'required',
+        path: 'additionalInfo',
+        value: ''
+      },
+      kind: 'required',
+      path: 'additionalInfo',
+      value: '',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    }
+  },
+  _message: 'Car validation failed'
+}
+2023-11-05T11:12:04.401Z [Car Management System Backend] [31merror[39m -> Error at /controllers/cars#createCar: InternalServerError: Failure in adding the car!
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Failure in adding the car!\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Failure in adding the car!',
+  statusCode: 500,
+  data: {}
+}
+2023-11-05T11:13:12.858Z [Car Management System Backend] [31merror[39m -> Error at /services/database/cars#addCar: Error: Car validation failed: additionalInfo: Path `additionalInfo` is required.
+    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:804:19)
+    at inspect (node:internal/util/inspect:363:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)
+    at Object.format (node:internal/util/inspect:2154:10)
+    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)
+    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)
+    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)
+    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)
+    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)
+    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Car validation failed: additionalInfo: Path `additionalInfo` is required.\n' +
+    '    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)\n' +
+    '    at formatValue (node:internal/util/inspect:804:19)\n' +
+    '    at inspect (node:internal/util/inspect:363:10)\n' +
+    '    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)\n' +
+    '    at Object.format (node:internal/util/inspect:2154:10)\n' +
+    '    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)\n' +
+    '    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)\n' +
+    '    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)\n' +
+    '    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)\n' +
+    '    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)\n' +
+    '    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)\n' +
+    '    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)\n' +
+    '    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)\n' +
+    '    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)\n' +
+    '    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)\n' +
+    '    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Car validation failed: additionalInfo: Path `additionalInfo` is required.',
+  errors: {
+    additionalInfo: ValidatorError: Path `additionalInfo` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `additionalInfo` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `additionalInfo` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `additionalInfo` is required.',
+        type: 'required',
+        path: 'additionalInfo',
+        value: ''
+      },
+      kind: 'required',
+      path: 'additionalInfo',
+      value: '',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    }
+  },
+  _message: 'Car validation failed'
+}
+2023-11-05T11:13:12.860Z [Car Management System Backend] [31merror[39m -> Error at /controllers/cars#createCar: InternalServerError: Failure in adding the car!
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Failure in adding the car!\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Failure in adding the car!',
+  statusCode: 500,
+  data: {}
+}
+2023-11-05T11:19:32.427Z [Car Management System Backend] [31merror[39m -> Error at /services/database/cars#addCar: Error: Car validation failed: additionalInfo: Path `additionalInfo` is required.
+    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:804:19)
+    at inspect (node:internal/util/inspect:363:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)
+    at Object.format (node:internal/util/inspect:2154:10)
+    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)
+    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)
+    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)
+    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)
+    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)
+    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Car validation failed: additionalInfo: Path `additionalInfo` is required.\n' +
+    '    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)\n' +
+    '    at formatValue (node:internal/util/inspect:804:19)\n' +
+    '    at inspect (node:internal/util/inspect:363:10)\n' +
+    '    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)\n' +
+    '    at Object.format (node:internal/util/inspect:2154:10)\n' +
+    '    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)\n' +
+    '    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)\n' +
+    '    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)\n' +
+    '    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)\n' +
+    '    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)\n' +
+    '    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)\n' +
+    '    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)\n' +
+    '    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)\n' +
+    '    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)\n' +
+    '    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)\n' +
+    '    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Car validation failed: additionalInfo: Path `additionalInfo` is required.',
+  errors: {
+    additionalInfo: ValidatorError: Path `additionalInfo` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `additionalInfo` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `additionalInfo` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `additionalInfo` is required.',
+        type: 'required',
+        path: 'additionalInfo',
+        value: ''
+      },
+      kind: 'required',
+      path: 'additionalInfo',
+      value: '',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    }
+  },
+  _message: 'Car validation failed'
+}
+2023-11-05T11:19:32.428Z [Car Management System Backend] [31merror[39m -> Error at /controllers/cars#createCar: InternalServerError: Failure in adding the car!
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Failure in adding the car!\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Failure in adding the car!',
+  statusCode: 500,
+  data: {}
+}
+2023-11-05T11:20:29.048Z [Car Management System Backend] [31merror[39m -> Error at /services/database/cars#addCar: Error: Car validation failed: additionalInfo: Path `additionalInfo` is required.
+    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:804:19)
+    at inspect (node:internal/util/inspect:363:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)
+    at Object.format (node:internal/util/inspect:2154:10)
+    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)
+    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)
+    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)
+    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)
+    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)
+    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Car validation failed: additionalInfo: Path `additionalInfo` is required.\n' +
+    '    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)\n' +
+    '    at formatValue (node:internal/util/inspect:804:19)\n' +
+    '    at inspect (node:internal/util/inspect:363:10)\n' +
+    '    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)\n' +
+    '    at Object.format (node:internal/util/inspect:2154:10)\n' +
+    '    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)\n' +
+    '    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)\n' +
+    '    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)\n' +
+    '    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)\n' +
+    '    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)\n' +
+    '    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)\n' +
+    '    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)\n' +
+    '    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)\n' +
+    '    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)\n' +
+    '    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)\n' +
+    '    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Car validation failed: additionalInfo: Path `additionalInfo` is required.',
+  errors: {
+    additionalInfo: ValidatorError: Path `additionalInfo` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `additionalInfo` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `additionalInfo` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `additionalInfo` is required.',
+        type: 'required',
+        path: 'additionalInfo',
+        value: ''
+      },
+      kind: 'required',
+      path: 'additionalInfo',
+      value: '',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    }
+  },
+  _message: 'Car validation failed'
+}
+2023-11-05T11:20:29.050Z [Car Management System Backend] [31merror[39m -> Error at /controllers/cars#createCar: InternalServerError: Failure in adding the car!
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Failure in adding the car!\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Failure in adding the car!',
+  statusCode: 500,
+  data: {}
+}
+2023-11-05T11:21:21.531Z [Car Management System Backend] [31merror[39m -> Error at /services/database/cars#addCar: Error: Car validation failed: additionalInfo: Path `additionalInfo` is required.
+    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:804:19)
+    at inspect (node:internal/util/inspect:363:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)
+    at Object.format (node:internal/util/inspect:2154:10)
+    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)
+    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)
+    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)
+    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)
+    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)
+    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Car validation failed: additionalInfo: Path `additionalInfo` is required.\n' +
+    '    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)\n' +
+    '    at formatValue (node:internal/util/inspect:804:19)\n' +
+    '    at inspect (node:internal/util/inspect:363:10)\n' +
+    '    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)\n' +
+    '    at Object.format (node:internal/util/inspect:2154:10)\n' +
+    '    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)\n' +
+    '    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)\n' +
+    '    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)\n' +
+    '    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)\n' +
+    '    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)\n' +
+    '    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)\n' +
+    '    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)\n' +
+    '    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)\n' +
+    '    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)\n' +
+    '    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)\n' +
+    '    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Car validation failed: additionalInfo: Path `additionalInfo` is required.',
+  errors: {
+    additionalInfo: ValidatorError: Path `additionalInfo` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `additionalInfo` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `additionalInfo` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `additionalInfo` is required.',
+        type: 'required',
+        path: 'additionalInfo',
+        value: ''
+      },
+      kind: 'required',
+      path: 'additionalInfo',
+      value: '',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    }
+  },
+  _message: 'Car validation failed'
+}
+2023-11-05T11:21:21.533Z [Car Management System Backend] [31merror[39m -> Error at /controllers/cars#createCar: InternalServerError: Failure in adding the car!
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Failure in adding the car!\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Failure in adding the car!',
+  statusCode: 500,
+  data: {}
+}
+2023-11-05T11:22:52.080Z [Car Management System Backend] [31merror[39m -> Error at /services/database/cars#addCar: Error: Car validation failed: additionalInfo: Path `additionalInfo` is required.
+    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:804:19)
+    at inspect (node:internal/util/inspect:363:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)
+    at Object.format (node:internal/util/inspect:2154:10)
+    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)
+    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)
+    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)
+    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)
+    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)
+    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Car validation failed: additionalInfo: Path `additionalInfo` is required.\n' +
+    '    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)\n' +
+    '    at formatValue (node:internal/util/inspect:804:19)\n' +
+    '    at inspect (node:internal/util/inspect:363:10)\n' +
+    '    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)\n' +
+    '    at Object.format (node:internal/util/inspect:2154:10)\n' +
+    '    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)\n' +
+    '    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)\n' +
+    '    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)\n' +
+    '    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)\n' +
+    '    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)\n' +
+    '    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)\n' +
+    '    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)\n' +
+    '    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)\n' +
+    '    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)\n' +
+    '    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)\n' +
+    '    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Car validation failed: additionalInfo: Path `additionalInfo` is required.',
+  errors: {
+    additionalInfo: ValidatorError: Path `additionalInfo` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `additionalInfo` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `additionalInfo` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `additionalInfo` is required.',
+        type: 'required',
+        path: 'additionalInfo',
+        value: ''
+      },
+      kind: 'required',
+      path: 'additionalInfo',
+      value: '',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    }
+  },
+  _message: 'Car validation failed'
+}
+2023-11-05T11:22:52.081Z [Car Management System Backend] [31merror[39m -> Error at /controllers/cars#createCar: InternalServerError: Failure in adding the car!
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Failure in adding the car!\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Failure in adding the car!',
+  statusCode: 500,
+  data: {}
+}
+2023-11-06T10:15:04.100Z [Car Management System Backend] [31merror[39m -> Error at /services/database/cars#addCar: Error: Car validation failed: additionalInfo: Path `additionalInfo` is required., propellant: Path `propellant` is required., price: Path `price` is required., year: Path `year` is required., model: Path `model` is required., brand: Path `brand` is required.
+    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:804:19)
+    at inspect (node:internal/util/inspect:363:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)
+    at Object.format (node:internal/util/inspect:2154:10)
+    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)
+    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)
+    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)
+    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)
+    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)
+    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Car validation failed: additionalInfo: Path `additionalInfo` is required., propellant: Path `propellant` is required., price: Path `price` is required., year: Path `year` is required., model: Path `model` is required., brand: Path `brand` is required.\n' +
+    '    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)\n' +
+    '    at formatValue (node:internal/util/inspect:804:19)\n' +
+    '    at inspect (node:internal/util/inspect:363:10)\n' +
+    '    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)\n' +
+    '    at Object.format (node:internal/util/inspect:2154:10)\n' +
+    '    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)\n' +
+    '    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)\n' +
+    '    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)\n' +
+    '    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)\n' +
+    '    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)\n' +
+    '    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)\n' +
+    '    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)\n' +
+    '    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)\n' +
+    '    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)\n' +
+    '    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)\n' +
+    '    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Car validation failed: additionalInfo: Path `additionalInfo` is required., propellant: Path `propellant` is required., price: Path `price` is required., year: Path `year` is required., model: Path `model` is required., brand: Path `brand` is required.',
+  errors: {
+    additionalInfo: ValidatorError: Path `additionalInfo` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `additionalInfo` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `additionalInfo` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `additionalInfo` is required.',
+        type: 'required',
+        path: 'additionalInfo',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'additionalInfo',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    },
+    propellant: ValidatorError: Path `propellant` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `propellant` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `propellant` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `propellant` is required.',
+        type: 'required',
+        path: 'propellant',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'propellant',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    },
+    price: ValidatorError: Path `price` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaNumber.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `price` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaNumber.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `price` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `price` is required.',
+        type: 'required',
+        path: 'price',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'price',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    },
+    year: ValidatorError: Path `year` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaNumber.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `year` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaNumber.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `year` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `year` is required.',
+        type: 'required',
+        path: 'year',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'year',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    },
+    model: ValidatorError: Path `model` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `model` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `model` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `model` is required.',
+        type: 'required',
+        path: 'model',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'model',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    },
+    brand: ValidatorError: Path `brand` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `brand` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `brand` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `brand` is required.',
+        type: 'required',
+        path: 'brand',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'brand',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    }
+  },
+  _message: 'Car validation failed'
+}
+2023-11-06T10:15:04.114Z [Car Management System Backend] [31merror[39m -> Error at /controllers/cars#createCar: InternalServerError: Failure in adding the car!
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Failure in adding the car!\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Failure in adding the car!',
+  statusCode: 500,
+  data: {}
+}
+2023-11-06T10:16:26.132Z [Car Management System Backend] [31merror[39m -> Error at /services/database/cars#addCar: Error: Car validation failed: additionalInfo: Path `additionalInfo` is required., propellant: Path `propellant` is required., price: Path `price` is required., year: Path `year` is required., model: Path `model` is required., brand: Path `brand` is required.
+    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:804:19)
+    at inspect (node:internal/util/inspect:363:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)
+    at Object.format (node:internal/util/inspect:2154:10)
+    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)
+    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)
+    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)
+    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)
+    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)
+    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Car validation failed: additionalInfo: Path `additionalInfo` is required., propellant: Path `propellant` is required., price: Path `price` is required., year: Path `year` is required., model: Path `model` is required., brand: Path `brand` is required.\n' +
+    '    at ValidationError.inspect (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/error/validation.js:50:26)\n' +
+    '    at formatValue (node:internal/util/inspect:804:19)\n' +
+    '    at inspect (node:internal/util/inspect:363:10)\n' +
+    '    at formatWithOptionsInternal (node:internal/util/inspect:2234:25)\n' +
+    '    at Object.format (node:internal/util/inspect:2154:10)\n' +
+    '    at Splatter._splat (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:71:25)\n' +
+    '    at Splatter.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/splat.js:119:19)\n' +
+    '    at Format.transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/logform/combine.js:20:24)\n' +
+    '    at DerivedLogger._transform (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:313:29)\n' +
+    '    at DerivedLogger.Transform._read (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:166:10)\n' +
+    '    at DerivedLogger.Transform._write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_transform.js:155:83)\n' +
+    '    at doWrite (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:390:139)\n' +
+    '    at writeOrBuffer (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:381:5)\n' +
+    '    at DerivedLogger.Writable.write (/Users/prajwal/Desktop/cars-management-system/server/node_modules/readable-stream/lib/_stream_writable.js:302:11)\n' +
+    '    at DerivedLogger.log (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/logger.js:257:10)\n' +
+    '    at DerivedLogger.error (/Users/prajwal/Desktop/cars-management-system/server/node_modules/winston/lib/winston/create-logger.js:95:19)\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:27:20)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at Generator.throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at _throw (/Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Car validation failed: additionalInfo: Path `additionalInfo` is required., propellant: Path `propellant` is required., price: Path `price` is required., year: Path `year` is required., model: Path `model` is required., brand: Path `brand` is required.',
+  errors: {
+    additionalInfo: ValidatorError: Path `additionalInfo` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `additionalInfo` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `additionalInfo` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `additionalInfo` is required.',
+        type: 'required',
+        path: 'additionalInfo',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'additionalInfo',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    },
+    propellant: ValidatorError: Path `propellant` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `propellant` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `propellant` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `propellant` is required.',
+        type: 'required',
+        path: 'propellant',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'propellant',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    },
+    price: ValidatorError: Path `price` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaNumber.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `price` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaNumber.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `price` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `price` is required.',
+        type: 'required',
+        path: 'price',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'price',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    },
+    year: ValidatorError: Path `year` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaNumber.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `year` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaNumber.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `year` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `year` is required.',
+        type: 'required',
+        path: 'year',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'year',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    },
+    model: ValidatorError: Path `model` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `model` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `model` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `model` is required.',
+        type: 'required',
+        path: 'model',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'model',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    },
+    brand: ValidatorError: Path `brand` is required.
+        at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)
+        at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)
+        at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      [stack]: 'ValidatorError: Path `brand` is required.\n' +
+        '    at validate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1364:13)\n' +
+        '    at SchemaString.SchemaType.doValidate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1348:7)\n' +
+        '    at /Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/document.js:2959:18\n' +
+        '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+      [message]: 'Path `brand` is required.',
+      properties: {
+        validator: [Function (anonymous)] {
+          [length]: 1,
+          [name]: '',
+          [prototype]: [Object]
+        },
+        message: 'Path `brand` is required.',
+        type: 'required',
+        path: 'brand',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'brand',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true,
+      [name]: 'ValidatorError'
+    }
+  },
+  _message: 'Car validation failed'
+}
+2023-11-06T10:16:26.135Z [Car Management System Backend] [31merror[39m -> Error at /controllers/cars#createCar: InternalServerError: Failure in adding the car!
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Failure in adding the car!\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:15:23)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Failure in adding the car!',
+  statusCode: 500,
+  data: {}
+}
+2023-11-06T13:03:49.409Z [Car Management System Backend] [31merror[39m -> uncaughtException: outer is not defined
+ReferenceError: outer is not defined
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/cars.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/index.js:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/server.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.runMain (node:internal/modules/run_main:83:12)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/node/src/_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+2023-11-06T13:04:09.257Z [Car Management System Backend] [31merror[39m -> uncaughtException: outer is not defined
+ReferenceError: outer is not defined
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/cars.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/index.js:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/server.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.runMain (node:internal/modules/run_main:83:12)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/node/src/_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+2023-11-06T13:04:13.927Z [Car Management System Backend] [31merror[39m -> uncaughtException: outer is not defined
+ReferenceError: outer is not defined
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/cars.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/index.js:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/server.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.runMain (node:internal/modules/run_main:83:12)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/node/src/_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+2023-11-06T13:04:36.018Z [Car Management System Backend] [31merror[39m -> uncaughtException: outer is not defined
+ReferenceError: outer is not defined
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/cars.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/index.js:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/server.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.runMain (node:internal/modules/run_main:83:12)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/node/src/_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+2023-11-06T13:04:40.070Z [Car Management System Backend] [31merror[39m -> uncaughtException: outer is not defined
+ReferenceError: outer is not defined
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/cars.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/index.js:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/server.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.runMain (node:internal/modules/run_main:83:12)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/node/src/_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+2023-11-06T13:04:43.494Z [Car Management System Backend] [31merror[39m -> uncaughtException: outer is not defined
+ReferenceError: outer is not defined
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/cars.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/index.js:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/server.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.runMain (node:internal/modules/run_main:83:12)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/node/src/_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+2023-11-06T13:05:28.202Z [Car Management System Backend] [31merror[39m -> uncaughtException: outer is not defined
+ReferenceError: outer is not defined
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/cars.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/index.js:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/server.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.runMain (node:internal/modules/run_main:83:12)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/node/src/_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+2023-11-06T16:46:56.618Z [Car Management System Backend] [31merror[39m -> uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/express/lib/router/route.js:211:15)
+    at Function.get (/Users/prajwal/Desktop/cars-management-system/server/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/cars.js:15:8)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/index.js:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/server.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.runMain (node:internal/modules/run_main:83:12)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/node/src/_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+2023-11-06T16:47:05.756Z [Car Management System Backend] [31merror[39m -> uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/express/lib/router/route.js:211:15)
+    at Function.get (/Users/prajwal/Desktop/cars-management-system/server/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/cars.js:15:8)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/index.js:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/server.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.runMain (node:internal/modules/run_main:83:12)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/node/src/_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+2023-11-06T16:47:09.034Z [Car Management System Backend] [31merror[39m -> uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/express/lib/router/route.js:211:15)
+    at Function.get (/Users/prajwal/Desktop/cars-management-system/server/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/cars.js:15:8)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/index.js:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/server.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.runMain (node:internal/modules/run_main:83:12)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/node/src/_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+2023-11-06T16:47:34.292Z [Car Management System Backend] [31merror[39m -> uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/express/lib/router/route.js:211:15)
+    at Function.get (/Users/prajwal/Desktop/cars-management-system/server/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/cars.js:15:8)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/index.js:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/server.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.runMain (node:internal/modules/run_main:83:12)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/node/src/_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+2023-11-06T16:47:41.358Z [Car Management System Backend] [31merror[39m -> uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/express/lib/router/route.js:211:15)
+    at Function.get (/Users/prajwal/Desktop/cars-management-system/server/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/cars.js:15:8)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/index.js:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/server.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.runMain (node:internal/modules/run_main:83:12)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/node/src/_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+2023-11-06T16:47:57.781Z [Car Management System Backend] [31merror[39m -> uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/express/lib/router/route.js:211:15)
+    at Function.get (/Users/prajwal/Desktop/cars-management-system/server/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/cars.js:15:8)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/index.js:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/server.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.runMain (node:internal/modules/run_main:83:12)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/node/src/_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+2023-11-06T16:48:01.045Z [Car Management System Backend] [31merror[39m -> uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/express/lib/router/route.js:211:15)
+    at Function.get (/Users/prajwal/Desktop/cars-management-system/server/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/cars.js:15:8)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/v1/index.js:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/api/index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/src/server.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader [as .js] (/Users/prajwal/Desktop/cars-management-system/server/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.runMain (node:internal/modules/run_main:83:12)
+    at Object.<anonymous> (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/node/src/_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+2023-11-06T16:49:18.490Z [Car Management System Backend] [31merror[39m -> Error at /controllers/cars#getCar: InternalServerError: 
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:73:23)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: \n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:73:23)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  statusCode: 500,
+  message: undefined,
+  data: {}
+}
+2023-11-06T23:36:27.036Z [Car Management System Backend] [31merror[39m -> uncaughtException: /Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js: Unexpected token (116:26)
+
+[0m [90m 114 |[39m             result[33m.[39msuccess [33m=[39m [36mtrue[39m[33m;[39m[0m
+[0m [90m 115 |[39m             result[33m.[39mmessage [33m=[39m car [33m?[39m [32m'The car is successfully updated'[39m [33m:[39m [32m'Nothing to update!'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 116 |[39m             result[33m.[39mdata [33m=[39m [33m;[39m[0m
+[0m [90m     |[39m                           [31m[1m^[22m[39m[0m
+[0m [90m 117 |[39m         } [36mcatch[39m (error) {[0m
+[0m [90m 118 |[39m             logger[33m.[39mdebug([32m'Looking up and updating a car record in the database -> failure'[39m)[33m;[39m[0m
+[0m [90m 119 |[39m[0m
+SyntaxError: /Users/prajwal/Desktop/cars-management-system/server/src/services/database/cars.js: Unexpected token (116:26)
+
+[0m [90m 114 |[39m             result[33m.[39msuccess [33m=[39m [36mtrue[39m[33m;[39m[0m
+[0m [90m 115 |[39m             result[33m.[39mmessage [33m=[39m car [33m?[39m [32m'The car is successfully updated'[39m [33m:[39m [32m'Nothing to update!'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 116 |[39m             result[33m.[39mdata [33m=[39m [33m;[39m[0m
+[0m [90m     |[39m                           [31m[1m^[22m[39m[0m
+[0m [90m 117 |[39m         } [36mcatch[39m (error) {[0m
+[0m [90m 118 |[39m             logger[33m.[39mdebug([32m'Looking up and updating a car record in the database -> failure'[39m)[33m;[39m[0m
+[0m [90m 119 |[39m[0m
+    at toParseError (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parse-error.ts:81:19)
+    at Parser.raise (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/tokenizer/index.ts:1487:19)
+    at Parser.unexpected (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/tokenizer/index.ts:1528:16)
+    at Parser.parseExprAtom (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:1354:16)
+    at Parser.parseExprSubscripts (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:710:23)
+    at Parser.parseUpdate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:687:21)
+    at Parser.parseMaybeUnary (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:649:23)
+    at Parser.parseMaybeUnaryOrPrivate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:387:14)
+    at Parser.parseExprOps (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:399:23)
+    at Parser.parseMaybeConditional (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:354:23)
+    at Parser.parseMaybeAssign (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:294:21)
+    at Parser.parseMaybeAssign (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:332:25)
+    at Parser.parseExpressionBase (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:217:23)
+    at callback (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:208:39)
+    at Parser.allowInAnd (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:3137:16)
+    at Parser.parseExpression (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:208:17)
+    at Parser.parseStatementContent (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/statement.ts:645:23)
+    at Parser.parseStatementLike (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/statement.ts:417:17)
+    at Parser.parseStatementListItem (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/statement.ts:366:17)
+    at Parser.parseBlockOrModuleBlockBody (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/statement.ts:1395:16)
+    at Parser.parseBlockBody (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/statement.ts:1368:10)
+    at Parser.parseBlock (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/statement.ts:1336:10)
+    at Parser.parseTryStatement (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/statement.ts:1155:23)
+    at Parser.parseStatementContent (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/statement.ts:484:21)
+    at Parser.parseStatementLike (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/statement.ts:417:17)
+    at Parser.parseStatementListItem (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/statement.ts:366:17)
+    at Parser.parseBlockOrModuleBlockBody (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/statement.ts:1395:16)
+    at Parser.parseBlockBody (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/statement.ts:1368:10)
+    at Parser.parseBlock (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/statement.ts:1336:10)
+    at Parser.parseFunctionBody (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:2589:24)
+    at Parser.parseFunctionBodyAndFinish (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:2560:10)
+    at Parser.parseMethod (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:2469:31)
+    at Parser.parseObjectMethod (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:2279:19)
+    at Parser.parseObjPropValue (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:2356:12)
+    at Parser.parsePropertyDefinition (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:2207:17)
+    at Parser.parseObjectLike (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:2081:21)
+    at Parser.parseExprAtom (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:1198:21)
+    at Parser.parseExprSubscripts (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:710:23)
+    at Parser.parseUpdate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:687:21)
+    at Parser.parseMaybeUnary (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:649:23)
+    at Parser.parseMaybeUnaryOrPrivate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:387:14)
+    at Parser.parseExprOps (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:399:23)
+    at Parser.parseMaybeConditional (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:354:23)
+    at Parser.parseMaybeAssign (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:294:21)
+    at callback (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:248:12)
+    at Parser.allowInAnd (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:3137:16)
+    at Parser.parseMaybeAssignAllowIn (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/expression.ts:247:17)
+    at Parser.parseVar (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/statement.ts:1540:16)
+    at Parser.parseVarStatement (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/statement.ts:1201:10)
+    at Parser.parseStatementContent (/Users/prajwal/Desktop/cars-management-system/server/node_modules/@babel/parser/src/parser/statement.ts:554:21)
+2023-11-06T23:43:45.490Z [Car Management System Backend] [31merror[39m -> Error at /services/database/cars#updateCar: CastError: Cast to Number failed for value "123,00fda kr." (type string) at path "price" for model "Car"
+    at SchemaNumber.cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:380:11)
+    at SchemaNumber.SchemaType.applySetters (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1219:12)
+    at SchemaNumber.castForQuery (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:432:14)
+    at SchemaNumber.handleSingle (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1561:15)
+    at SchemaNumber.castForQuery (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:430:20)
+    at cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast.js:352:39)
+    at cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast.js:73:20)
+    at model.Query.Query.cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:4769:12)
+    at model.Query.Query._castConditions (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:2200:10)
+    at model.Query._findOneAndUpdate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:3243:8)
+    at model.Query.exec (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:4291:80)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'CastError: Cast to Number failed for value "123,00fda kr." (type string) at path "price" for model "Car"\n' +
+    '    at SchemaNumber.cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:380:11)\n' +
+    '    at SchemaNumber.SchemaType.applySetters (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1219:12)\n' +
+    '    at SchemaNumber.castForQuery (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:432:14)\n' +
+    '    at SchemaNumber.handleSingle (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1561:15)\n' +
+    '    at SchemaNumber.castForQuery (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:430:20)\n' +
+    '    at cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast.js:352:39)\n' +
+    '    at cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast.js:73:20)\n' +
+    '    at model.Query.Query.cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:4769:12)\n' +
+    '    at model.Query.Query._castConditions (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:2200:10)\n' +
+    '    at model.Query._findOneAndUpdate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:3243:8)\n' +
+    '    at model.Query.exec (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:4291:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Cast to Number failed for value "123,00fda kr." (type string) at path "price" for model "Car"',
+  stringValue: '"123,00fda kr."',
+  messageFormat: undefined,
+  kind: 'Number',
+  value: '123,00fda kr.',
+  path: 'price',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast/number.js:27:10)
+      at SchemaNumber.cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:378:12)
+      at SchemaNumber.SchemaType.applySetters (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1219:12)
+      at SchemaNumber.castForQuery (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:432:14)
+      at SchemaNumber.handleSingle (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1561:15)
+      at SchemaNumber.castForQuery (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:430:20)
+      at cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast.js:352:39)
+      at cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast.js:73:20)
+      at model.Query.Query.cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:4769:12)
+      at model.Query.Query._castConditions (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:2200:10)
+      at model.Query._findOneAndUpdate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:3243:8)
+      at model.Query.exec (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:4291:80)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    [stack]: 'AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n' +
+      '\n' +
+      '  assert.ok(!isNaN(val))\n' +
+      '\n' +
+      '    at castNumber (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast/number.js:27:10)\n' +
+      '    at SchemaNumber.cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:378:12)\n' +
+      '    at SchemaNumber.SchemaType.applySetters (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1219:12)\n' +
+      '    at SchemaNumber.castForQuery (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:432:14)\n' +
+      '    at SchemaNumber.handleSingle (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1561:15)\n' +
+      '    at SchemaNumber.castForQuery (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:430:20)\n' +
+      '    at cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast.js:352:39)\n' +
+      '    at cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast.js:73:20)\n' +
+      '    at model.Query.Query.cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:4769:12)\n' +
+      '    at model.Query.Query._castConditions (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:2200:10)\n' +
+      '    at model.Query._findOneAndUpdate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:3243:8)\n' +
+      '    at model.Query.exec (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:4291:80)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    [message]: 'The expression evaluated to a falsy value:\n\n  assert.ok(!isNaN(val))\n',
+    generatedMessage: true,
+    [name]: 'AssertionError',
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'string',
+  model: Model { Car },
+  [name]: 'CastError'
+}
+2023-11-06T23:43:45.493Z [Car Management System Backend] [31merror[39m -> Error at /controllers/cars#updateCar: InternalServerError: Failure to update the car
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:51:23)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Failure to update the car\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:51:23)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Failure to update the car',
+  statusCode: 500,
+  data: {}
+}
+2023-11-06T23:43:50.783Z [Car Management System Backend] [31merror[39m -> Error at /services/database/cars#updateCar: CastError: Cast to Number failed for value "123,00fda kr." (type string) at path "price" for model "Car"
+    at SchemaNumber.cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:380:11)
+    at SchemaNumber.SchemaType.applySetters (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1219:12)
+    at SchemaNumber.castForQuery (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:432:14)
+    at SchemaNumber.handleSingle (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1561:15)
+    at SchemaNumber.castForQuery (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:430:20)
+    at cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast.js:352:39)
+    at cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast.js:73:20)
+    at model.Query.Query.cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:4769:12)
+    at model.Query.Query._castConditions (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:2200:10)
+    at model.Query._findOneAndUpdate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:3243:8)
+    at model.Query.exec (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:4291:80)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'CastError: Cast to Number failed for value "123,00fda kr." (type string) at path "price" for model "Car"\n' +
+    '    at SchemaNumber.cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:380:11)\n' +
+    '    at SchemaNumber.SchemaType.applySetters (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1219:12)\n' +
+    '    at SchemaNumber.castForQuery (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:432:14)\n' +
+    '    at SchemaNumber.handleSingle (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1561:15)\n' +
+    '    at SchemaNumber.castForQuery (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:430:20)\n' +
+    '    at cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast.js:352:39)\n' +
+    '    at cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast.js:73:20)\n' +
+    '    at model.Query.Query.cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:4769:12)\n' +
+    '    at model.Query.Query._castConditions (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:2200:10)\n' +
+    '    at model.Query._findOneAndUpdate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:3243:8)\n' +
+    '    at model.Query.exec (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:4291:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Cast to Number failed for value "123,00fda kr." (type string) at path "price" for model "Car"',
+  stringValue: '"123,00fda kr."',
+  messageFormat: undefined,
+  kind: 'Number',
+  value: '123,00fda kr.',
+  path: 'price',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast/number.js:27:10)
+      at SchemaNumber.cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:378:12)
+      at SchemaNumber.SchemaType.applySetters (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1219:12)
+      at SchemaNumber.castForQuery (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:432:14)
+      at SchemaNumber.handleSingle (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1561:15)
+      at SchemaNumber.castForQuery (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:430:20)
+      at cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast.js:352:39)
+      at cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast.js:73:20)
+      at model.Query.Query.cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:4769:12)
+      at model.Query.Query._castConditions (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:2200:10)
+      at model.Query._findOneAndUpdate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:3243:8)
+      at model.Query.exec (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:4291:80)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    [stack]: 'AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n' +
+      '\n' +
+      '  assert.ok(!isNaN(val))\n' +
+      '\n' +
+      '    at castNumber (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast/number.js:27:10)\n' +
+      '    at SchemaNumber.cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:378:12)\n' +
+      '    at SchemaNumber.SchemaType.applySetters (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1219:12)\n' +
+      '    at SchemaNumber.castForQuery (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:432:14)\n' +
+      '    at SchemaNumber.handleSingle (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schemaType.js:1561:15)\n' +
+      '    at SchemaNumber.castForQuery (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/schema/number.js:430:20)\n' +
+      '    at cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast.js:352:39)\n' +
+      '    at cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/cast.js:73:20)\n' +
+      '    at model.Query.Query.cast (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:4769:12)\n' +
+      '    at model.Query.Query._castConditions (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:2200:10)\n' +
+      '    at model.Query._findOneAndUpdate (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:3243:8)\n' +
+      '    at model.Query.exec (/Users/prajwal/Desktop/cars-management-system/server/node_modules/mongoose/lib/query.js:4291:80)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    [message]: 'The expression evaluated to a falsy value:\n\n  assert.ok(!isNaN(val))\n',
+    generatedMessage: true,
+    [name]: 'AssertionError',
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'string',
+  model: Model { Car },
+  [name]: 'CastError'
+}
+2023-11-06T23:43:50.785Z [Car Management System Backend] [31merror[39m -> Error at /controllers/cars#updateCar: InternalServerError: Failure to update the car
+    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:51:23)
+    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  [stack]: 'Error: Failure to update the car\n' +
+    '    at call (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:51:23)\n' +
+    '    at tryCatch (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator._invoke (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at Generator.next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at asyncGeneratorStep (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at _next (/Users/prajwal/Desktop/cars-management-system/server/src/controllers/cars.js:2:1)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  [message]: 'Failure to update the car',
+  statusCode: 500,
+  data: {}
+}

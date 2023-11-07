@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.list .action {
+  cursor: pointer;
+}
+
+/* .submit-form {
+  max-width: 300px;
+  margin: auto;
+}
+
+.edit-form {
+  max-width: 300px;
+  margin: auto;
+} */
+
+.car-styles {
+  animation: slideImage 10s linear infinite;
+}
+
+@keyframes slideImage {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100% + 1200px)); /* Adjust the width of the image */
+  }
+}
+
+.add-car-btn {
+  float: right;
+}
+
+.cars-text {
+  display: inline-block;
+}
+
+.cars-list-top-panel {
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.create-car-text-container {
+  width: 100%;
+  display: flex;
+  align-self: end;
+  justify-content: center;
+}
+
+.create-car-text {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.table-header {
+  text-align: center;
+}
+
+.car-list-actions {
+  display: flex;
+  justify-content: space-evenly;
+}
