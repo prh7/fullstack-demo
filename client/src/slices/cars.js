@@ -27,7 +27,7 @@ export const fetchCars = createAsyncThunk(
         try {
             const response = await carDataService.getCars();
 
-            return response.data.cars;
+            return response.data;
         } catch (error) {
             throw error;
         }
@@ -86,7 +86,7 @@ const carsSlice = createSlice({
         })
         .addCase(fetchCars.fulfilled, (state, action) => {
             state.isLoading = false;
-            state.data = action.payload;
+            state.data = action.payload.cars;
         })
         .addCase(fetchCars.rejected, (state, action) => {
             state.isLoading = false;

@@ -1,9 +1,15 @@
-.input-box {
+.textbox {
     margin: 5px 0 5px 0;
 }
 
+.form {
+    width: 50%;
+}
+
 .form-btns {
+    display: flex;
     padding: 10px 0 0 0;
+    justify-content: center;
 }
 
 .btn-pad {

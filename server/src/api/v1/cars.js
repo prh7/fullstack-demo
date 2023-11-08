@@ -12,6 +12,4 @@ router.delete('/:carId', carsController.deleteCar);
 
 router.get('/', carsController.getCars);
 
-router.get('/:carId', carsController.getCar);
-
 export default router;

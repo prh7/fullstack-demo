@@ -4,10 +4,6 @@ const getCars = () => {
     return http.get("/cars");
 };
 
-const getCar = (carId) => {
-    return http.get(`/cars/${carId}`);
-};
-
 const addCar = (data) => {
     return http.post("/cars", data);
 };
@@ -24,7 +20,6 @@ const carDataService = {
     getCars,
     addCar,
     updateCar,
-    getCar,
     deleteCar
 };
   

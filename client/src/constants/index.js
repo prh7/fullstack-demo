@@ -1,3 +1,5 @@
+export const propellants = ['Petrol', 'Diesel', 'Electric', 'Hybrid'];
+
 export const carManufacturers = [
     "Abarth",
     "Alfa Romeo",

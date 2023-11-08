@@ -16,18 +16,22 @@ import car from "./assets/car.png";
 
 import './App.css';
 
-function App() {
+const NotFound = () => {
+  return (
+    <div>
+      <h1 style={{ textAlign: "center"}}>Page Not Found</h1>
+    </div>
+  );
+}
+
+const App = () => {
   return (
     <div>
 
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <a href="/cars" className="navbar-brand">
-          <img src={car} className="car-styles" width="150" />
-        </a>
-        <div className='create-car-text-container'> 
-          <h1 className="create-car-text">Create Car Feature(s)</h1>
-        </div>
-        
+          <img src={car} className="car-styles" width="150" alt="car"/>
+        </a> 
       </nav>
 
       <div className="container mt-3">
@@ -37,6 +41,7 @@ function App() {
           <Route path="/cars/add" element={<AddCar />} />
           <Route path="/cars/:carId" element={<EditCar />} />
           <Route path="/cars/:carId/view" element={<ViewCar />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
 
@@ -49,9 +54,7 @@ export default App;
 /* 
 To Do:
 -----
-- Testing
-- Split form into input and select components
-- Add 'No cars found' message to the table
-- Make car animation responsive
-- Implement auto-suggestion for brand and model if there is time
+- Testing- Form and Car slice
+- Small documentation
+- Remeber to remove git setup from project
 */

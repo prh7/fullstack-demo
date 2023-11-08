@@ -63,29 +63,6 @@ const cars = {
         }
     },
 
-    async getCar(request, response, next) {
-        try {
-            const { carId } = request.params;
-            
-            const car = await dbService.cars.findCar({ carId });
-
-            if (!car.success) {
-                throw new InternalServerError(car.message);
-            }
-
-            response.json({
-                success: car.success,
-                message: car.message,
-                car: car.data
-            });
-        } catch (error) {
-            logger.error('Error at /controllers/cars#getCar: %o', error);
-
-            next(error);   
-        }
-    },
-
-
     async getCars (request, response, next) {
         try {
             let cars = await dbService.cars.findCars();

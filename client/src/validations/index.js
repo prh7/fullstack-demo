@@ -2,14 +2,18 @@ import * as Yup from 'yup';
 
 export const carFormValidationSchema =Yup.object().shape({
     brand: Yup.string()
-      .required('The brand of the car is required'),
+      .required('Please choose a brand'),
     model: Yup.string()
-      .required('The model for the brand of the car is required')
+      .required(`Please fill in model linked to the car's brand`)
       .matches(/^[ A-Za-z0-9_@./#&+-]*$/, 'The model can only contain alphabets, numbers and allowed special characters _@./#&+-'),
     year: Yup.number()
-      .required('The year of car registration is required')
-      .min(1950, 'The year of car registration must be above 1950')
-      .max(2100, 'The year of car registration must be below 2100'),
+      .transform((value) => Number.isNaN(value) ? null : value )
+      .required('Please fill in registration year of the car')
+      .min(1950, 'Registration year of the must be greater than 1950')
+      .max(2100, 'Registration year of the car must be less than 2100'),
     price: Yup.number()
-      .required('The price for the car is required')
+      .transform((value) => Number.isNaN(value) ? null : value )
+      .required('Please fill in price of the car'),
+    propellant: Yup.string()
+      .required('Please choose a propellant')
 });

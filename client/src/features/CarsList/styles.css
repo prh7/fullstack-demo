@@ -1,0 +1,17 @@
+.add-car-btn {
+    float: right;
+}
+
+.cars-text {
+    display: inline-block;
+}
+
+.cars-list-top-panel {
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.car-list-actions {
+    display: flex;
+    justify-content: space-evenly;
+}

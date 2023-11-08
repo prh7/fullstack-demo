@@ -1,13 +1,13 @@
-import React, { useEffect, useCallback, useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from "react-router-dom";
 import { useTable } from "react-table";
 import toast from 'react-simple-toasts';
 import * as dayjs from 'dayjs';
 
-import { fetchCars, deleteCar } from "../slices/cars";
+import { fetchCars, deleteCar } from "../../slices/cars";
 
-import '../App.css';
+import './styles.css';
 
 const CarsList = () => {
     const navigate = useNavigate();
@@ -15,14 +15,10 @@ const CarsList = () => {
 
     const cars = useSelector(state => state.cars.data);
     const isLoading = useSelector(state => state.cars.isLoading);
-    
-    const initFetch = useCallback(() => {
-        dispatch(fetchCars());
-    }, [dispatch]);
 
     useEffect(() => {
-        initFetch();
-    }, [initFetch]);
+        dispatch(fetchCars());
+    }, [dispatch]);
 
     const removeCar = (carId) => {
         dispatch(deleteCar({ carId }))
@@ -147,10 +143,6 @@ const CarsList = () => {
         );
     }
     
-    if (cars.length === 0) {
-        <div><i>There are no cars</i></div>
-    }
-                                
     return (
         <div className="list row">
             <div className="col-xs-12 col-md-6 col-sm-8 col-lg-6 center-block cars-list-top-panel">
@@ -160,7 +152,7 @@ const CarsList = () => {
                 </button>
             </div>
 
-            <div className="col-md-12 list">
+            <div className="table-responsive list">
                 <table className="table table-striped table-bordered" {...getTableProps()}>
                     <thead>
                     { 
@@ -176,7 +168,7 @@ const CarsList = () => {
                     }
                     </thead>
                     <tbody {...getTableBodyProps()}>
-                        {    
+                        {   cars.length === 0 ? <td>No cars found</td> :
                             rows.map(row => {
                                 prepareRow(row);
 
