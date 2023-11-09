@@ -24,6 +24,6 @@ The database is hosted on the cloud premises. So, the developer don't need to wo
 * DELETE v1/cars/:carId (Deletes a car, referenced by the unique identifier of the car)
 * GET v1/cars (Fetches a list of available cars)
 
-<i>There is no autorization setup for the API endpoints that impies that the API endpoints isn't with security.</i>
+<i>There is no authorization setup for the API endpoints that impies that the API endpoints isn't with security.</i>
 
 <i>Note that, there is a Postman collection under the docs folder in the root directory of the project. The developer can extract the API documentation and test the endpoints. Make sure that the server is running locally and you have Postman (https://www.postman.com/downloads/) installed on your local machine. Also, use the import functionality of the Postman (https://learning.postman.com/docs/designing-and-developing-your-api/importing-an-api/) to test the endpoints.</i>

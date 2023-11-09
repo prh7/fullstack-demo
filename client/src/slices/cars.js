@@ -34,19 +34,6 @@ export const fetchCars = createAsyncThunk(
     }
 );
 
-export const fetchCar = createAsyncThunk(
-    "car/fetch",
-    async ({ carId }) => {
-        try {
-            const response = await carDataService.getCar(carId);
-
-            return response.data.car;
-        } catch (error) {
-            throw error;
-        }
-    }
-);
-
 export const updateCar = createAsyncThunk(
     "cars/update",
     async ({ carId, data }) => {

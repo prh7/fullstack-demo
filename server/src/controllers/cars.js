@@ -107,7 +107,7 @@ const cars = {
             response.json({ 
                 success: deletedCar.success, 
                 message: deletedCar.message,
-                car: { carId }
+                car: { carId }
             });
         } catch (error) {
             logger.error('Error at /controllers/cars#deleteCar: %o', error);
